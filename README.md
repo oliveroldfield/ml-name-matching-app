@@ -11,7 +11,7 @@ pip install streamlit pandas numpy scikit-learn jellyfish fuzzywuzzy python-Leve
 
 2. Run the app:
 ```
-streamlit run streamlit_app.py
+streamlit run app.py
 ```
 
 ## Features
@@ -20,6 +20,8 @@ streamlit run streamlit_app.py
 - **Test** your model with validation data to see accuracy metrics
 - **Match** names interactively or in bulk
 - View detailed matching features and confidence scores
+- Support for multicultural name matching (Arabic, Indian, Pakistani, Sri Lankan)
+- Handles various transliteration variations and cultural naming patterns
 
 ## How It Works
 
