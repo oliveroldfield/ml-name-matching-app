@@ -25,7 +25,7 @@ def extract_features(name1, name2):
     name2 = preprocess_name(name2)
     
     features = {
-        'jaro_winkler': jellyfish.jaro_winkler(name1, name2),
+        'jaro_winkler': jellyfish.jaro_winkler_similarity(name1, name2),
         'levenshtein': jellyfish.levenshtein_distance(name1, name2),
         'damerau_levenshtein': jellyfish.damerau_levenshtein_distance(name1, name2),
         'hamming': jellyfish.hamming_distance(name1, name2) if len(name1) == len(name2) else min(len(name1), len(name2)),
